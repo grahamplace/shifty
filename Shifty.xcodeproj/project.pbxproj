@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		743FA03723B2801600E0EB85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA03623B2801600E0EB85 /* AppDelegate.swift */; };
+		743FA03923B2801600E0EB85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA03823B2801600E0EB85 /* ViewController.swift */; };
+		743FA03B23B2801700E0EB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743FA03A23B2801700E0EB85 /* Assets.xcassets */; };
+		743FA03E23B2801700E0EB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743FA03C23B2801700E0EB85 /* Main.storyboard */; };
+		743FA04A23B2801700E0EB85 /* ShiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA04923B2801700E0EB85 /* ShiftyTests.swift */; };
+		743FA05523B2801700E0EB85 /* ShiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA05423B2801700E0EB85 /* ShiftyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		743FA04623B2801700E0EB85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 743FA02B23B2801600E0EB85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 743FA03223B2801600E0EB85;
+			remoteInfo = Shifty;
+		};
+		743FA05123B2801700E0EB85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 743FA02B23B2801600E0EB85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 743FA03223B2801600E0EB85;
+			remoteInfo = Shifty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		743FA03323B2801600E0EB85 /* Shifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		743FA03623B2801600E0EB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		743FA03823B2801600E0EB85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		743FA03A23B2801700E0EB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		743FA03D23B2801700E0EB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		743FA03F23B2801700E0EB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743FA04023B2801700E0EB85 /* Shifty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shifty.entitlements; sourceTree = "<group>"; };
+		743FA04523B2801700E0EB85 /* ShiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		743FA04923B2801700E0EB85 /* ShiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftyTests.swift; sourceTree = "<group>"; };
+		743FA04B23B2801700E0EB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743FA05023B2801700E0EB85 /* ShiftyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		743FA05423B2801700E0EB85 /* ShiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftyUITests.swift; sourceTree = "<group>"; };
+		743FA05623B2801700E0EB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		743FA03023B2801600E0EB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743FA04223B2801700E0EB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743FA04D23B2801700E0EB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		743FA02A23B2801600E0EB85 = {
+			isa = PBXGroup;
+			children = (
+				743FA03523B2801600E0EB85 /* Shifty */,
+				743FA04823B2801700E0EB85 /* ShiftyTests */,
+				743FA05323B2801700E0EB85 /* ShiftyUITests */,
+				743FA03423B2801600E0EB85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		743FA03423B2801600E0EB85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				743FA03323B2801600E0EB85 /* Shifty.app */,
+				743FA04523B2801700E0EB85 /* ShiftyTests.xctest */,
+				743FA05023B2801700E0EB85 /* ShiftyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		743FA03523B2801600E0EB85 /* Shifty */ = {
+			isa = PBXGroup;
+			children = (
+				743FA03623B2801600E0EB85 /* AppDelegate.swift */,
+				743FA03823B2801600E0EB85 /* ViewController.swift */,
+				743FA03A23B2801700E0EB85 /* Assets.xcassets */,
+				743FA03C23B2801700E0EB85 /* Main.storyboard */,
+				743FA03F23B2801700E0EB85 /* Info.plist */,
+				743FA04023B2801700E0EB85 /* Shifty.entitlements */,
+			);
+			path = Shifty;
+			sourceTree = "<group>";
+		};
+		743FA04823B2801700E0EB85 /* ShiftyTests */ = {
+			isa = PBXGroup;
+			children = (
+				743FA04923B2801700E0EB85 /* ShiftyTests.swift */,
+				743FA04B23B2801700E0EB85 /* Info.plist */,
+			);
+			path = ShiftyTests;
+			sourceTree = "<group>";
+		};
+		743FA05323B2801700E0EB85 /* ShiftyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				743FA05423B2801700E0EB85 /* ShiftyUITests.swift */,
+				743FA05623B2801700E0EB85 /* Info.plist */,
+			);
+			path = ShiftyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		743FA03223B2801600E0EB85 /* Shifty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743FA05923B2801700E0EB85 /* Build configuration list for PBXNativeTarget "Shifty" */;
+			buildPhases = (
+				743FA02F23B2801600E0EB85 /* Sources */,
+				743FA03023B2801600E0EB85 /* Frameworks */,
+				743FA03123B2801600E0EB85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shifty;
+			productName = Shifty;
+			productReference = 743FA03323B2801600E0EB85 /* Shifty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		743FA04423B2801700E0EB85 /* ShiftyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743FA05C23B2801700E0EB85 /* Build configuration list for PBXNativeTarget "ShiftyTests" */;
+			buildPhases = (
+				743FA04123B2801700E0EB85 /* Sources */,
+				743FA04223B2801700E0EB85 /* Frameworks */,
+				743FA04323B2801700E0EB85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				743FA04723B2801700E0EB85 /* PBXTargetDependency */,
+			);
+			name = ShiftyTests;
+			productName = ShiftyTests;
+			productReference = 743FA04523B2801700E0EB85 /* ShiftyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		743FA04F23B2801700E0EB85 /* ShiftyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743FA05F23B2801700E0EB85 /* Build configuration list for PBXNativeTarget "ShiftyUITests" */;
+			buildPhases = (
+				743FA04C23B2801700E0EB85 /* Sources */,
+				743FA04D23B2801700E0EB85 /* Frameworks */,
+				743FA04E23B2801700E0EB85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				743FA05223B2801700E0EB85 /* PBXTargetDependency */,
+			);
+			name = ShiftyUITests;
+			productName = ShiftyUITests;
+			productReference = 743FA05023B2801700E0EB85 /* ShiftyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		743FA02B23B2801600E0EB85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Graham Place";
+				TargetAttributes = {
+					743FA03223B2801600E0EB85 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					743FA04423B2801700E0EB85 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 743FA03223B2801600E0EB85;
+					};
+					743FA04F23B2801700E0EB85 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 743FA03223B2801600E0EB85;
+					};
+				};
+			};
+			buildConfigurationList = 743FA02E23B2801600E0EB85 /* Build configuration list for PBXProject "Shifty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 743FA02A23B2801600E0EB85;
+			productRefGroup = 743FA03423B2801600E0EB85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				743FA03223B2801600E0EB85 /* Shifty */,
+				743FA04423B2801700E0EB85 /* ShiftyTests */,
+				743FA04F23B2801700E0EB85 /* ShiftyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		743FA03123B2801600E0EB85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743FA03B23B2801700E0EB85 /* Assets.xcassets in Resources */,
+				743FA03E23B2801700E0EB85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743FA04323B2801700E0EB85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743FA04E23B2801700E0EB85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		743FA02F23B2801600E0EB85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743FA03923B2801600E0EB85 /* ViewController.swift in Sources */,
+				743FA03723B2801600E0EB85 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743FA04123B2801700E0EB85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743FA04A23B2801700E0EB85 /* ShiftyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743FA04C23B2801700E0EB85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743FA05523B2801700E0EB85 /* ShiftyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		743FA04723B2801700E0EB85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 743FA03223B2801600E0EB85 /* Shifty */;
+			targetProxy = 743FA04623B2801700E0EB85 /* PBXContainerItemProxy */;
+		};
+		743FA05223B2801700E0EB85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 743FA03223B2801600E0EB85 /* Shifty */;
+			targetProxy = 743FA05123B2801700E0EB85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		743FA03C23B2801700E0EB85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				743FA03D23B2801700E0EB85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		743FA05723B2801700E0EB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		743FA05823B2801700E0EB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		743FA05A23B2801700E0EB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Shifty/Shifty.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Shifty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shifty.Shifty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		743FA05B23B2801700E0EB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Shifty/Shifty.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Shifty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shifty.Shifty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		743FA05D23B2801700E0EB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShiftyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = shifty.ShiftyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shifty.app/Contents/MacOS/Shifty";
+			};
+			name = Debug;
+		};
+		743FA05E23B2801700E0EB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShiftyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = shifty.ShiftyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shifty.app/Contents/MacOS/Shifty";
+			};
+			name = Release;
+		};
+		743FA06023B2801700E0EB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShiftyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shifty.ShiftyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Shifty;
+			};
+			name = Debug;
+		};
+		743FA06123B2801700E0EB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ShiftyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shifty.ShiftyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Shifty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		743FA02E23B2801600E0EB85 /* Build configuration list for PBXProject "Shifty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743FA05723B2801700E0EB85 /* Debug */,
+				743FA05823B2801700E0EB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743FA05923B2801700E0EB85 /* Build configuration list for PBXNativeTarget "Shifty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743FA05A23B2801700E0EB85 /* Debug */,
+				743FA05B23B2801700E0EB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743FA05C23B2801700E0EB85 /* Build configuration list for PBXNativeTarget "ShiftyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743FA05D23B2801700E0EB85 /* Debug */,
+				743FA05E23B2801700E0EB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743FA05F23B2801700E0EB85 /* Build configuration list for PBXNativeTarget "ShiftyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743FA06023B2801700E0EB85 /* Debug */,
+				743FA06123B2801700E0EB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 743FA02B23B2801600E0EB85 /* Project object */;
+}
