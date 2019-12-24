@@ -10,17 +10,22 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+    var statusBarItem: NSStatusItem!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+    }
+    
+    @objc func orderABurrito() {
+        print("Ordering a burrito!")
+    }
+
+    @objc func cancelBurritoOrder() {
+        print("Canceling your order :(")
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
 
 }
 
