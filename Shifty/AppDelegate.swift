@@ -11,21 +11,26 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBarItem: NSStatusItem!
-
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-    }
+    var clock: Clock!
     
-    @objc func orderABurrito() {
-        print("Ordering a burrito!")
-    }
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        clock = Clock()
+        let statusBar = NSStatusBar.system
+        statusBarItem = statusBar.statusItem(
+            withLength: NSStatusItem.variableLength)
+        let statusBarMenu = NSMenu(title: "Cap Status Bar Menu")
+        statusBarItem.menu = statusBarMenu
 
-    @objc func cancelBurritoOrder() {
-        print("Canceling your order :(")
+        let timer = Timer.scheduledTimer(timeInterval: 0.25, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 
+    @objc func updateTime() {
+        let ts = clock.getTimeStr()
+        statusBarItem.button?.title = ts
+    }
 }
 
