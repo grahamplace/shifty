@@ -12,10 +12,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBarItem: NSStatusItem!
     var dateItem: NSMenuItem!
-    var clock: Clock!
     dynamic var ts = ""
     dynamic var ds = ""
-
+    let clock = Clock()
 
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -27,7 +26,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc func updateAllTimes() {
-        
+        constructMenu()
+        updateMenuTime()
+        updateDropdownDate()
+    }
+    
+    func constructMenu() {
         let statusBar = NSStatusBar.system
         statusBarItem = statusBar.statusItem(
             withLength: NSStatusItem.variableLength)
@@ -35,23 +39,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusBarItem.menu = statusBarMenu
         statusBarItem.button?.title = ts
 
-        let _ = statusBarMenu.addItem(
+        statusBarMenu.addItem(
             withTitle: ds,
             action: nil,
             keyEquivalent: "")
         
-        updateMenuTime()
-        updateDropdownDate()
+        statusBarMenu.addItem(NSMenuItem.separator())
+        
+        statusBarMenu.addItem(
+            withTitle: "Quit",
+            action: #selector(AppDelegate.quit),
+            keyEquivalent: "")
     }
     
     func updateMenuTime() {
-        let clock = Clock()
         ts = clock.getTimeStr()
     }
     
     func updateDropdownDate() {
-        let clock = Clock()
         ds = clock.getDateStr()
+    }
+    
+    @objc
+    func quit() {
+        exit(0)
     }
 }
 
