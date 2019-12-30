@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import LaunchAtLogin
+
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -19,6 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAllTimes), userInfo: nil, repeats: true)
+        toggleLaunchAtLogin()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -50,6 +53,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             withTitle: "Quit",
             action: #selector(AppDelegate.quit),
             keyEquivalent: "")
+
+        
+        // build launch at login item
+        let launchStatus = LaunchAtLogin.isEnabled
+        let launchItem = statusBarMenu.addItem(
+            withTitle: "Open at Login",
+            action: #selector(AppDelegate.toggleLaunchAtLogin),
+            keyEquivalent: "")
+        if launchStatus {
+            launchItem.state = NSControl.StateValue.on
+        }
+        else {
+            launchItem.state = NSControl.StateValue.off
+        }
     }
     
     func updateMenuTime() {
@@ -63,6 +80,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc
     func quit() {
         exit(0)
+    }
+    
+    @objc
+    func toggleLaunchAtLogin() {
+        LaunchAtLogin.isEnabled = !LaunchAtLogin.isEnabled
     }
 }
 

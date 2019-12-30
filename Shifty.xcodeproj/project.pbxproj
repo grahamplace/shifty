@@ -13,6 +13,9 @@
 		743FA04A23B2801700E0EB85 /* ShiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA04923B2801700E0EB85 /* ShiftyTests.swift */; };
 		743FA05523B2801700E0EB85 /* ShiftyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA05423B2801700E0EB85 /* ShiftyUITests.swift */; };
 		743FA06323B28A2000E0EB85 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA06223B28A2000E0EB85 /* Clock.swift */; };
+		74A393BA23BA795A0092429E /* LaunchAtLogin.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 74A393B823BA795A0092429E /* LaunchAtLogin.framework.dSYM */; };
+		74A393C023BA7A360092429E /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74A393BC23BA7A260092429E /* LaunchAtLogin.framework */; };
+		74A393C123BA7A360092429E /* LaunchAtLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74A393BC23BA7A260092429E /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74DE512E23B28FD400905AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DE512D23B28FD400905AAA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		74A393C223BA7A360092429E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74A393C123BA7A360092429E /* LaunchAtLogin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74A393C323BA7A710092429E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		743FA03323B2801600E0EB85 /* Shifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743FA03623B2801600E0EB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +73,9 @@
 		743FA05423B2801700E0EB85 /* ShiftyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftyUITests.swift; sourceTree = "<group>"; };
 		743FA05623B2801700E0EB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		743FA06223B28A2000E0EB85 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		74A393B723BA79590092429E /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LaunchAtLogin.framework; sourceTree = "<group>"; };
+		74A393B823BA795A0092429E /* LaunchAtLogin.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = LaunchAtLogin.framework.dSYM; sourceTree = "<group>"; };
+		74A393BC23BA7A260092429E /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
 		74DE512D23B28FD400905AAA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A393C023BA7A360092429E /* LaunchAtLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +108,13 @@
 		743FA02A23B2801600E0EB85 = {
 			isa = PBXGroup;
 			children = (
+				74A393B723BA79590092429E /* LaunchAtLogin.framework */,
+				74A393B823BA795A0092429E /* LaunchAtLogin.framework.dSYM */,
 				743FA03523B2801600E0EB85 /* Shifty */,
 				743FA04823B2801700E0EB85 /* ShiftyTests */,
 				743FA05323B2801700E0EB85 /* ShiftyUITests */,
 				743FA03423B2801600E0EB85 /* Products */,
+				74A393BB23BA7A250092429E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +160,14 @@
 			path = ShiftyUITests;
 			sourceTree = "<group>";
 		};
+		74A393BB23BA7A250092429E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74A393BC23BA7A260092429E /* LaunchAtLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +178,8 @@
 				743FA02F23B2801600E0EB85 /* Sources */,
 				743FA03023B2801600E0EB85 /* Frameworks */,
 				743FA03123B2801600E0EB85 /* Resources */,
+				74A393C223BA7A360092429E /* Embed Frameworks */,
+				74A393C323BA7A710092429E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -195,6 +238,7 @@
 				TargetAttributes = {
 					743FA03223B2801600E0EB85 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					743FA04423B2801700E0EB85 = {
 						CreatedOnToolsVersion = 11.3;
@@ -233,6 +277,7 @@
 			files = (
 				743FA03B23B2801700E0EB85 /* Assets.xcassets in Resources */,
 				74DE512E23B28FD400905AAA /* Main.storyboard in Resources */,
+				74A393BA23BA795A0092429E /* LaunchAtLogin.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,9 +457,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Shifty/Shifty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Shifty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,6 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = shifty.Shifty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -430,9 +482,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Shifty/Shifty.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Shifty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
