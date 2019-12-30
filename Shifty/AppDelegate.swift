@@ -22,6 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let _ = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAllTimes), userInfo: nil, repeats: true)
         toggleLaunchAtLogin()
+        NSApp.setActivationPolicy(.prohibited)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -45,6 +46,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusBarMenu.addItem(
             withTitle: ds,
             action: nil,
+            keyEquivalent: "")
+        
+        statusBarMenu.addItem(NSMenuItem.separator())
+
+        statusBarMenu.addItem(
+            withTitle: "Shifty v1.0.0",
+            action: nil,
+            keyEquivalent: "")
+        
+        statusBarMenu.addItem(NSMenuItem.separator())
+        
+        statusBarMenu.addItem(
+            withTitle: "https://github.com/grahamplace/shifty",
+            action: #selector(AppDelegate.openGitHub),
             keyEquivalent: "")
         
         statusBarMenu.addItem(NSMenuItem.separator())
@@ -85,6 +100,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc
     func toggleLaunchAtLogin() {
         LaunchAtLogin.isEnabled = !LaunchAtLogin.isEnabled
+    }
+    
+    @objc
+    func openGitHub() {
+        
+        let url = NSURL(string:"https://github.com/grahamplace/shifty")!
+        let browserBundleIdentifier = "com.apple.Safari"
+
+        NSWorkspace.shared.open([(url as URL)],
+               withAppBundleIdentifier:browserBundleIdentifier,
+                               options:[],
+        additionalEventParamDescriptor:nil,
+                     launchIdentifiers:nil)
     }
 }
 
